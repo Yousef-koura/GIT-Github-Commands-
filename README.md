@@ -30,4 +30,6 @@ How to add branch to github:
          \\ git merge (branch name)              # is used to merge branch contents 
          \\ git push origin (branch name)        # push it to github
     9- git branch -d (branch name)               # is used to delete the branch
-    10- 
+
+How to pull Request:
+    1- git pull origin main                      # is used to 
