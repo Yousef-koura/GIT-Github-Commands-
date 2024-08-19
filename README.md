@@ -32,4 +32,12 @@ How to add branch to github:
     9- git branch -d (branch name)               # is used to delete the branch
 
 How to pull Request:
-    1- git pull origin main                      # is used to 
+    1- git pull origin main                # is used to Update branch with the latest changes from the main branch 
+
+How to reset last commit:
+    1- git reset HEAD~1                    # is used to reset the last commit
+
+How to get all commits:
+    1- git log                             # is used to log all commits and commit changes
+
+Fork: is used to copy someone repository to your repository.
