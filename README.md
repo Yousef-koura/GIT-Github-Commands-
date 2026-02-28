@@ -42,9 +42,13 @@ Git & GitHub – Core Commands
 -----------------------------
 
 ### 8) Connect Local Repo to GitHub 
-#### 1- create a repo in github
-    - git remote add origin https://github.com/USERNAME/REPO_NAME.git
-    - git remote -v          # chech if repo is in local
-    - git checkout master
-    - git push -u origin master
+#### 1- Create a repository on GitHub
+        - Go to GitHub → New Repository
+#### 2- Link local repository to GitHub
+        - git remote add origin https://github.com/USERNAME/REPO_NAME.git
+        - git remote -v          # verify remote repository
+#### 3- Ensure correct branch name (recommended)
+        - git branch -M main     # rename branch to match GitHub default
+#### 4- Push local project to GitHub
+        - git push -u origin main
 ------------------------------------------
