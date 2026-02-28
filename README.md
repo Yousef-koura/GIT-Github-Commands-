@@ -33,7 +33,9 @@ Git & GitHub – Core Commands
 -----------------------------
 
 ### 7) Create Branch for Main / Master Branch
+<center>
 <img src="image.png" alt="Git Branching" width="400"/>
+</center>
 
     - git branch                    #(show all existing branches)
     - git branch branch_name        #(create a new branch)
@@ -52,3 +54,33 @@ Git & GitHub – Core Commands
 #### 4- Push local project to GitHub
         - git push -u origin main
 ------------------------------------------
+
+
+GitHub Team Workflow (Summary)
+==============================
+
+<center>
+<img src="image-1.png" alt="Git Branching" width="400"/>
+</center>
+
+1) Internal / Write Access:
+    - Clone the repository
+    - Create a branch for your feature or fix
+    - Make changes and commit locally
+    - Push your branch to the remote repository
+    - Open a Pull Request for review and automated checks
+    - Merge the branch after approval and delete it
+
+2) External / No Write Access:
+    - Fork the repository on GitHub
+    - Clone your fork locally
+    - Add the original repository as upstream
+    - Create a branch for your work
+    - Commit changes and push to your fork
+    - Open a Pull Request to the original repository for review
+
+Golden Rules:
+- Never push directly to the main branch
+- One feature per branch
+- Keep commits and Pull Requests clear and descriptive
+- Resolve conflicts before merging
