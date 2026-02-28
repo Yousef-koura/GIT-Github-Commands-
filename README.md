@@ -1,43 +1,50 @@
-# Git & Github Commands  
-   
-How to clone the project repository from github to vs code:
-    1- git clone https://github.com/  # is used to Copy a GitHub repository to your local machine.
-    2- git status                     # is used to Check the status of your working directory and staging area.
-    3- git add (file name)            # is used to Stage specific files to be committed.
-    4- git commit -m "Updated"        # is used to Commit your staged changes with a descriptive message.
-    5- git push origin main           # is used to Push your committed changes to the main branch on GitHub.
+Git & GitHub – Core Commands
+==============================
 
-How to upload your project to github:
-    1- create a new project in github
-    2- cd (folder name)                   # navigate to folder in terminal
-    3- git init                           # is used to iInitialize a new Git repository in your project folder.
-    4- git add .                          # is used to Stage all files in your project folder for the first commit.
-    5- git commit -m "Updated"            # is used to Commit the staged files with a message.
-    6- git remote add origin project url  # is used to Link your local repository to the GitHub repository.
-    7- git branch                         # is used to Check the current branch (by default, it's often master).
-    8- git branch -M main                 # is used to Rename the default branch from master to main.
-    9- git push -u origin main            # is used to Push your project to the main branch on GitHub.
+## Workflow: create → track → commit
 
-How to add branch to github:
-    1- git branch                                # is used to List all branches in your repository.
-    2- git checkout -b (branch name)             # is used to Create and switch to a new branch.    
-    3- git push origin (branch name)             # is used to Push the new branch to GitHub.
-    4- git checkout (branch name)                # is used to switch between branches.
-    5- git push origin (branch name)             # is used to Push changes to a specific branch.
-    6- git add .                                 # is used to Stage all changes in the current branch.
-    7- git diff (branch name)                    # is used to cCompare changes between branches.
-    8- merge contents:
-        --> git merge (branch name)              # is used to Merge the specified branch into your current branch.
-        --> git push origin (branch name)        # is used to Push the merged changes to GitHub.
-    9- git branch -d (branch name)               # is used to delete the branch
 
-How to pull Request:
-    1- git pull origin main                # is used to Update branch with the latest changes from the main branch 
+### 1) Create & Initialize Project
+    -  git init "folder_name"
+------------------------------
 
-How to reset last commit:
-    1- git reset HEAD~1                    # is used to reset the last commit
+### 2) Create Project Files
+    -    touch README.md
+    -    touch main.py
+-----------------------------
 
-How to get all commits:
-    1- git log                             # is used to log all commits and commit changes
+### 3) Check Repository Status
+    -    git status
+-----------------------------
 
-Fork: is used to copy someone repository to your repository.
+### 4) Stage Files
+    -    git add .
+    -    git add README.md     #(Or stage specific files)
+-----------------------------
+
+### 5) Commit Changes
+    -    git commit -m"Initialize project structure"
+-----------------------------
+
+### 6) Daily Git Workflow
+    -    git status
+    -    git add .
+    -    git commit -m "Describe what changed"
+-----------------------------
+
+### 7) Create Branch for Main / Master Branch
+<img src="image.png" alt="Git Branching" width="400"/>
+
+    - git branch                    #(show all existing branches)
+    - git branch branch_name        #(create a new branch)
+    - git checkout branch_name      #(switch to the branch)
+    - git merge branch_name         #(merge branch into current branch)
+-----------------------------
+
+### 8) Connect Local Repo to GitHub 
+#### 1- create a repo in github
+    - git remote add origin https://github.com/USERNAME/REPO_NAME.git
+    - git remote -v          # chech if repo is in local
+    - git checkout master
+    - git push -u origin master
+------------------------------------------
